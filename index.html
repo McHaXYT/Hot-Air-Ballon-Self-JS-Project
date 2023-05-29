@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="shortcut icon" href="Img/Hot-Air-Ballon.png" type="image/x-icon">
+    <title>Hot Air Ballon</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="Img/Hot-Air-Ballon.png" alt="Hot-Air-Ballon" class="ballon-img">
+        <img src="Img/rock-1.png" alt="rock" class="rock-img">
+        <img src="Img/rock-2.png" alt="rock" class="rock-img">
+    </div>
+    <div class="menu-container">
+        <h1 class="main-heading">
+            <span class="red">h</span>o<span class="red">t</span> a<span class="red">i</span>r <span class="red">b</span>a<span class="red">l</span>l<span class="red">o</span>n <span class="red">r</span>u<span class="red">n</span><span class="red">n</span>e<span class="red">r</span>!
+        </h1>
+        <button onclick="window.location.href='game.html';" class="play-link link">Play !</button>
+        <button class="link about-link" id="about-us">about us !</button>
+        <button class="link rate-link" id="rate-us">rate us !</button>
+    </div>
+    <div class="about-us-container display-none" id="about-us-main-container">
+        <h1 class="main-heading about-us-h">About Us</h1>
+        <p class="about-us-p">
+            Hi ! i'm a solo developer McHaXYT i've worked on this project for about 3 day its my first project after my metric exams its not that good and has taken a long time tho ! but i'm looking forward ko working on more projects like this so, to support this solo developer why not go on my social and give a follow !
+        </p>
+        <div class="socials">
+            <a href="https://www.instagram.com/mchax_offical_yt/" class="i-a">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/McHaXYT_Offical" class="i-a">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://github.com/McHaXYT" class="i-a">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+        <button class="try-again-btn" id="back-btn">Back</button>
+    </div>
+    <div class="about-us-container rate-us-container display-none" id="rate-us-main-container">
+        <h1 class="main-heading about-us-h">Rate us !</h1>
+        <p class="about-us-p">hi ! as a solo developer i would like to know how much you rate this game so rate this game by clicking the stars below this ! and thankx for you feedback !</p>
+        <div class="stars-container">
+            <i class="fa-solid fa-star" id="star-1"></i>
+            <i class="fa-solid fa-star" id="star-2"></i>
+            <i class="fa-solid fa-star" id="star-3"></i>
+            <i class="fa-solid fa-star" id="star-4"></i>
+            <i class="fa-solid fa-star" id="star-5"></i>
+        </div>
+        <p class="about-us-p feedback display-none" id="feedbacks"></p>
+        <button class="try-again-btn rateus-btn" id="remove-feedback-btn">Remove feedback</button>
+        <button class="try-again-btn rateus-btn" id="back-btn">Back</button>
+    </div>
+    <audio src="Music/Town 3.mp3" id="game-music" loop="loop"></audio>
+    <button class="try-again-btn text" id="music-btn">
+        <i class="fa fa-music"></i>
+    </button>
+    <footer id="footer" class="main-footer">
+        <p class="about-us-p cpr">Copyright &copy; 2023 McHaXYT. All Rights Reserved</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/22f6533c22.js" crossorigin="anonymous"></script>
+    <script src="App/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Img/background.webp);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 1.2rem;
+}
+
+.rock-img {
+    width: 80px;
+}
+
+.main-heading {
+    font-family: 'Bangers', cursive;
+    text-shadow: -1.9px -1.9px 0 #000, 1.9px -1.9px 0 #000, -1.9px 1.9px 0 #000, 1.9px 1.9px 0 #000;
+    color: #FCFFE7;
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 50px auto 20px auto;
+}
+
+.red {
+    color: #E76161;
+}
+
+.link {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E76161;
+    color: #FCFFE7;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 0px 10px 0px;
+    margin: 0px auto 10px auto;
+    width: 80%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #E76161;
+    background-color: #FCFFE7;
+    transition: all .3s ease-in-out;
+}
+
+.about-us-container {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    margin-left: -175px;
+    margin-top: -250px;
+    background-color: #fff;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+}
+
+.about-us-h {
+    color: #0f0f0f;
+    text-shadow: none;
+    font-weight: 100;
+    font-size: 42px;
+}
+
+.about-us-p {
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin: 0px auto 30px auto;
+    max-width: 325px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.try-again-btn {
+    margin-top: 35px;
+    background-color: #0f0f0f;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 2px solid #0f0f0f;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.try-again-btn:hover {
+    color: #0f0f0f;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.try-again-btn:active {
+    transform: translateY(5px);
+    transition: all .1s ease-out;
+}
+
+.fa {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fa:hover {
+    transform: translateY(-6px);
+    transition: all .3s ease-in-out;
+    color: #E76161;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+}
+
+.i-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.i-a:link,
+.i-a:visited,
+.i-a:hover {
+    color: #0f0f0f;
+}
+
+.display-none {
+    display: none;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.fa-star {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-star:hover {
+    color: #F9D949;
+    transform: translateY(-3px);
+    transition: all .2s ease-in-out;
+}
+
+.yellow {
+    color: #F9D949;
+}
+
+.feedback {
+    margin: 15px auto 0px auto;
+}
+
+.rateus-btn {
+    margin-top: 15px;
+}
+
+#music-btn {
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
+    border-radius: 70%;
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+#music-btn:hover {
+    color: #E76161;
+    background-color: #0f0f0f;
+    transition: all .2s ease-out;
+    transform: translateY(-2px);
+}
+
+.fa-music {
+    font-size: 18px;
+}
+
+.fa-music:hover {
+    transform: none;
+}
+
+.red {
+    color: #E76161;
+}
+
+.main-footer {
+    position: absolute;
+    bottom: -05%;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 400px) {
+    .link {
+        display: block;
+        width: 250px;
+    }
+    .img-container {
+        margin-top: 80px;
+    }
+}

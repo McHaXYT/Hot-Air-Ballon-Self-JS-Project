@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/game.css">
+    <link rel="shortcut icon" href="Img/Hot-Air-Ballon.png" type="image/x-icon">
+    <title>Hot Air Ballon</title>
+</head>
+<body id="body">
+    <div class="game-over display-none" id="game-ended">
+        <h1 class="score-tag g-go">Game Over !</h1>
+        <p class="text">you lost the game has ended because you collided with rock and failed to doghe it don't worry wanna try again next time i'm sure you will succed to reach the top next time ! Good Luck Pilot !</p>
+        <h1 class="score-dislay-ge score-tag score-go">Your Score : <span class="score-ge" id="score-ge"></span></h1>
+        <button class="try-again-btn text" id="again-btn">Try Again !</button>
+        <button class="try-again-btn text" id="back-btn" onclick="window.location.href='index.html';">Main Menu</button>
+    </div>
+    <h1 class="score-tag">Score : <span id="score" class="score-tag">0</span></h1>
+    <img class="ballon" id="userPlayer" src="Img/Hot-Air-Ballon.png" alt="Hot-Air-Ballon"></img>
+    <audio src="Music/Town 2.mp3" id="game-music" loop="loop"></audio>
+    <button class="try-again-btn text" id="music-btn">
+        <i class="fa fa-music"></i>
+    </button>
+    <script src="https://kit.fontawesome.com/22f6533c22.js" crossorigin="anonymous"></script>
+    <script src="App/game.js"></script>
+</body>
+</html>

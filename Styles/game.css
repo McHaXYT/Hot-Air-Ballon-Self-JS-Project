@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Img/background.webp);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-tag {
+    margin-top: 30px;
+    letter-spacing: 3px;
+    color: #0f0f0f;
+}
+
+.ballon {
+    position: fixed;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 25%;
+}
+
+.rocks {
+    position: fixed;
+    z-index: -2;
+    top: -20%;
+    animation: tobottom 6s infinite;
+    width: 100px;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    margin-left: -175px;
+    margin-top: -220px;
+    background-color: #fff;
+    width: 350px;
+    height: 440px;
+    text-align: center;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+}
+
+.text {
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin: 30px auto 0 auto;
+    max-width: 325px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.g-go {
+    margin-top: 50px;
+}
+
+.try-again-btn {
+    font-size: 18px;
+    margin-top: 35px;
+    background-color: #0f0f0f;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 2px solid #0f0f0f;
+    cursor: pointer;
+}
+
+#back-btn {
+    margin-top: 10px;
+}
+
+.try-again-btn:hover {
+    color: #0f0f0f;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.try-again-btn:active {
+    transform: translateY(5px);
+    transition: all .1s ease-out;
+}
+
+.display-none {
+    display: none;
+}
+
+#music-btn {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    border-radius: 70%;
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+#music-btn:hover {
+    color: #E76161;
+    background-color: #0f0f0f;
+    transition: all .2s ease-out;
+    transform: translateY(-2px);
+}
+
+.red {
+    color: #E76161;
+}
+
+@keyframes tobottom {
+    0% {
+        top: -30%;
+    }
+    100% {
+        top: 150%;
+    }
+}
+
+@media (max-width: 575px) {
+    .rocks {
+        width: 70px;
+    }
+    .ballon {
+        width: 70px;
+    }
+}
+
